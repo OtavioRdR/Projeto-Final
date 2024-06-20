@@ -1,7 +1,6 @@
 package com.apifutebol.apifutebol.service;
 
 import com.apifutebol.apifutebol.model.Clube;
-import com.apifutebol.apifutebol.model.Clube;
 import com.apifutebol.apifutebol.repository.ClubeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
@@ -11,12 +10,12 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class ClubeService {
+public class ClubService {
 
     @Autowired
     private ClubeRepository clubeRepository;
 
-    public Clube criarClube(Clube clube) {
+    public Clube criarClube(@org.jetbrains.annotations.NotNull Clube clube) {
         Optional<Clube> clubeExistente = clubeRepository.findByNomeAndEstado(clube.getNome(), clube.getEstado());
         if (clubeExistente.isPresent()) {
             throw new DataIntegrityViolationException("Clube já existe no estado especificado");
