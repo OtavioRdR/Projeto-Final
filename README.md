@@ -1,4 +1,4 @@
-# Projeto Final - Bootcamp Mercado Livre
+# Projeto Final - Bootcamp Mercado Livre🎁
 
 Este repositório contém o **Projeto Final** desenvolvido durante o Bootcamp Mercado Livre, com o objetivo de criar uma solução de e-commerce escalável e eficiente. Este projeto envolve a implementação de funcionalidades principais para uma plataforma de marketplace, simulando o ambiente do Mercado Livre.
 
